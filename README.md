@@ -17,4 +17,28 @@ best one (**!** it does not mean that the solution is optimal).
 
 ## Interface 
 
-comming soon
+**ACO** solution
+
+![demo aco](https://raw.githubusercontent.com/Iulian-Stan/AntColonyOptimization/007bc8ab8c6d810cbf6e76083c8fa28b72f6b0fc/demo%20aco.PNG)
+
+**Backtrack** solution
+
+![demo bt](https://raw.githubusercontent.com/Iulian-Stan/AntColonyOptimization/007bc8ab8c6d810cbf6e76083c8fa28b72f6b0fc/demo%20bt.PNG)
+
+There is a graphical representation of the problem on the left side and control panel on the right.
+
+## Graphic
+Dots represent cities (green one - the starting city, red - others) and arrows the best found path. 
+As mentioned before **ACO** can find a local best, not necessarily the global one.  
+
+## Control
+Parameters:
+* **Cities** - the number of cities
+* **Ants** - ant colony population
+* **Delay** - small freeze time amount used in simulation
+* **Iterations** - number of iteration the algoritm is run
+* **α** - **pheromone** influence factor (how much the chosen path is influenced by pheromones)
+* **β** - individual influence factor (how much individual desired affect the chosen path)
+* **ρ** - **pheromone** evaporation coefficient
+
+Best found solution and optimal solution in terms of path cost (length) are displayed on the bottom.
