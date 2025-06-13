@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace TSP
+namespace ACO
 {
     internal class AntSystemSolver : Solver
     {
@@ -13,7 +13,7 @@ namespace TSP
         private readonly int _ants;
         private readonly List<List<int>> _antsPath;
         private readonly List<List<double>> _pheromones;
-        private readonly Random _rand = new Random();
+        private readonly Random _rand = new();
         private int _iterations;
 
         public AntSystemSolver(object[] args)
@@ -99,7 +99,7 @@ namespace TSP
             int next = 0;
             //Init starting point
             path.Add(k);
-            //3 check if there are any unvisited nodes 
+            //3 check if there are any unvisited nodes
             while (path.Count < Points.Count)
             {
                 oldProb = sumProb = 0;

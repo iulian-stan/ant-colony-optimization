@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 
-namespace TSP
+namespace ACO
 {
     internal class OptimalSolver : Solver
     {
@@ -23,7 +23,7 @@ namespace TSP
         /// <returns>stop criteria is met</returns>
         public override bool Solve(int delay, out double cost)
         {
-            int currentNode = CurrentPath[CurrentPath.Count - 1]; // get the last point from the path
+            int currentNode = CurrentPath[^1]; // get the last point from the path
             Costs[currentNode][currentNode] = 1; // mark currrent node as visited
 
             int next = 0;
@@ -41,7 +41,7 @@ namespace TSP
             while (next != Costs[currentNode].Count && (Costs[next][next] == 1 || next == currentNode))
                 ++next; //exclude loop in an explored or the same node
 
-            if (next == Costs[currentNode].Count) //if there is no option 
+            if (next == Costs[currentNode].Count) //if there is no option
                 CurrentPath.RemoveAt(CurrentPath.Count - 1); //go back
             else //otherwise
             {

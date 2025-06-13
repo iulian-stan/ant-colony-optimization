@@ -2,14 +2,14 @@
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace TSP
+namespace ACO
 {
     public partial class BarCounter : UserControl
     {
         public new string Name
         {
-            set 
-            { 
+            set
+            {
                 label.Text = value;
             }
         }

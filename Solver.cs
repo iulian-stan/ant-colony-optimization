@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace TSP
+namespace ACO
 {
     internal abstract class Solver
     {

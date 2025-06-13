@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TSP
+namespace ACO
 {
     static class Program
     {
@@ -13,7 +13,7 @@ namespace TSP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTsp());
+            Application.Run(new FormACO());
         }
     }
 }
