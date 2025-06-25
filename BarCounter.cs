@@ -23,7 +23,6 @@ namespace ACO
             get { return hScrollBar.Value; }
         }
 
-
         public BarCounter()
         {
             InitializeComponent();
